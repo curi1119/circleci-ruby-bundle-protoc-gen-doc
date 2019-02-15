@@ -9,3 +9,4 @@ FROM circleci/ruby:2.5.3
 
 COPY --from=protoc-gen-doc /go/bin/protoc-gen-doc /usr/local/bin/
 COPY --from=protoc-gen-doc /go/bin/protoc /usr/local/bin/
+COPY --from=protoc-gen-doc /go/include/google /usr/local/include/
